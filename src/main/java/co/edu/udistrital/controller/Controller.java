@@ -32,8 +32,8 @@ public class Controller {
             option = view.readData("Selecciona una opcion");
             switch(option) {
                 case "1":
-                    String txt = view.readData("\nDigite el texto "
-                            + "con simbolos a analizar");
+                    String txt = view.readData("\nDigite el texto con simbolos"
+                            + " a analizar:");
                     balanceSymb(txt);
                     break;
                 case "2":
@@ -47,14 +47,14 @@ public class Controller {
     
     /**
      * metodo que recibe el texto, llama al modelo y muestra el resultado.
-     * * @param txt texto a evaluar
+     * 
+     * @param txt texto a evaluar
      */
     public void balanceSymb(String txt) {
         BalanceSymb balance = new BalanceSymb();
         balance.setTxt(txt);
         boolean balanced = balance.verifyBalance();
         
-        // muestra mensaje dependiendo de si es correcto o no
         if(balanced) {
             view.showMsg("El texto '" + txt + "' es correcto");
         } else {

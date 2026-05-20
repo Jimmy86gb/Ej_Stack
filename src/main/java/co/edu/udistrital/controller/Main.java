@@ -6,10 +6,11 @@ package co.edu.udistrital.controller;
  * @author Jimmy86gb
  */
 public class Main {
-    
+
     /**
      * metodo ejecutable del programa.
-     * * @param args argumentos de linea de comandos
+     *
+     * @param args argumentos de linea de comandos
      */
     public static void main(String[] args) {
         Controller control;

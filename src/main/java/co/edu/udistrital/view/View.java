@@ -19,7 +19,8 @@ public class View {
     
     /**
      * muestra un mensaje al usuario y lee la entrada por consola.
-     * * @param msg mensaje a mostrar
+     * 
+     * @param msg mensaje a mostrar
      * @return el texto ingresado
      */
     public String readData(String msg) {
@@ -30,7 +31,8 @@ public class View {
     
     /**
      * imprime un mensaje por pantalla.
-     * * @param msg mensaje a imprimir
+     * 
+     * @param msg mensaje a imprimir
      */
     public void showMsg(String msg) {
         System.out.println(msg);
